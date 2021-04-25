@@ -11,6 +11,7 @@ import com.example.bookcatalogsystem.Model.Book;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Repository
 public class BooksDB {
@@ -25,6 +26,10 @@ public class BooksDB {
         booksList.add(book);
         System.out.println(book + " is  inserted");
         return "Able to store the book";
+    }
+
+    public List<Book> getBooks() {
+        return booksList;
     }
 }
 

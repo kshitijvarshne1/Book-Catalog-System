@@ -33,6 +33,5 @@ public class BookService {
     public boolean deleteById(long id){
         return booksDB.deleteById(id);
     }
-
 }
 

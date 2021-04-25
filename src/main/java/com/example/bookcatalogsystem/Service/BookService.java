@@ -7,6 +7,18 @@
 
 package com.example.bookcatalogsystem.Service;
 
+import com.example.bookcatalogsystem.Model.Book;
+import com.example.bookcatalogsystem.Repository.BooksDB;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
 public class BookService {
+
+    @Autowired
+    BooksDB booksDB;
+    public String insertBook(Book book) {
+        return booksDB.saveBook(book);
+    }
 }
 

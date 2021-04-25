@@ -19,6 +19,7 @@ public class BookService {
 
     @Autowired
     BooksDB booksDB;
+
     public String insertBook(Book book) {
         return booksDB.saveBook(book);
     }
@@ -29,5 +30,9 @@ public class BookService {
     public Book getBookById(long id) {
         return booksDB.getBookById(id);
     }
+    public boolean deleteById(long id){
+        return booksDB.deleteById(id);
+    }
+
 }
 

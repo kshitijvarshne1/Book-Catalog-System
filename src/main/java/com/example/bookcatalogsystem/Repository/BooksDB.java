@@ -39,5 +39,22 @@ public class BooksDB {
         }
         return null;
     }
+    public boolean deleteById(long id){
+        Book deleteBook=null;
+        for (Book book : booksList) {
+            if(book.getId()==id){
+                deleteBook=book;
+                break;
+            }
+        }
+        if(deleteBook!=null){
+            booksList.remove(deleteBook);
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
 }
 

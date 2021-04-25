@@ -31,6 +31,5 @@ public class Book {
                 ", cost=" + cost +
                 '}'+'\n';
     }
-
 }
 

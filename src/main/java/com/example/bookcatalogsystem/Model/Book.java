@@ -7,6 +7,11 @@
 
 package com.example.bookcatalogsystem.Model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Book {
     private long id;
     private String authorName;

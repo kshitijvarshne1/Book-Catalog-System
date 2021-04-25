@@ -31,5 +31,13 @@ public class BooksDB {
     public List<Book> getBooks() {
         return booksList;
     }
+    public Book getBookById(long id) {
+        for (Book books : booksList) {
+            if (books.getId() == id) {
+                return books;
+            }
+        }
+        return null;
+    }
 }
 
